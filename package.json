@@ -21,7 +21,6 @@
     "@hubvisor/client-core": "^0.1.0"
   },
   "devDependencies": {
-    "@hubvisor/build-core": "^0.1.0",
-    "babel-loader": "^8.0.0-beta"
+    "@hubvisor/build-core": "^0.1.2"
   }
 }
