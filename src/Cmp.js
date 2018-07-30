@@ -1,7 +1,7 @@
-import log from '@hubvisor/client-core/log'
+import Log from '@hubvisor/client-core/Log'
 import cmd from './cmd'
 
-const { info, debug, trace, warn, error } = log.tag('hello')
+const { info, debug, trace, warn, error } = Log.console({ name: 'CMP', tag: 'Cmp' })
 
 const globalName = '__cmp'
 

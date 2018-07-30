@@ -1,10 +1,12 @@
-import log from '@hubvisor/client-core/log'
+import Log from '@hubvisor/client-core/Log'
+
+const { error } = Log.console({ name: 'CMP', tag: 'cmd' })
 
 const processCommand = (obj, command) => {
   try {
     command(obj)
   } catch (e) {
-    log.error('Error while processing command : ', e.message, e.stack)
+    error('Error while processing command : ', e.message, e.stack)
   }
 }
 
