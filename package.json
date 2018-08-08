@@ -21,6 +21,6 @@
     "@hubvisor/client-core": "^0.1.0"
   },
   "devDependencies": {
-    "@hubvisor/build-core": "^0.1.2"
+    "@hubvisor/build-core": "^0.1.6"
   }
 }
