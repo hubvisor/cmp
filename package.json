@@ -1,0 +1,26 @@
+{
+  "name": "@hubvisor/cmp",
+  "version": "0.1.0",
+  "description": "Hubvisor consent management platform module",
+  "main": "dist/umd/hbv-cmp.js",
+  "module": "dist/esm/hbv-cmp.js",
+  "repository": "https://github.com/hubvisor/cmp.git",
+  "author": "Hubvisor",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src",
+    "fix": "eslint src --fix",
+    "dev": "webpack-serve --config build/webpack.dev.conf.js --progress",
+    "prebuild": "rm -rf dist",
+    "build:umd": "webpack --config build/webpack.prod.conf --progress",
+    "build:esm": "mkdir -p dist/esm && babel src --out-dir dist/esm",
+    "doc": "jsdoc src/** -d docs",
+    "build": "yarn build:esm && yarn build:umd"
+  },
+  "dependencies": {
+    "@hubvisor/client-core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@hubvisor/build-core": "^0.1.6"
+  }
+}

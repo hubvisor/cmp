@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Hubvisor CMP test page</title>
+  </head>
+  <body>
+    <h1>Hubvisor CMP test page</h1>
+    <script>
+      __cmp = {
+        cmd: []
+      }
+      __cmp.cmd.push(() => { console.log('before !') })
+    </script>
+  </body>
+</html>
